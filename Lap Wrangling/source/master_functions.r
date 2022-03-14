@@ -31,8 +31,8 @@ initialize_data <- function(){
 
 initialize_circuits <- function(){
 
-    locations_2022 <<- c("Sakhir", "Jeddah", "Melbourne", "Imola", "Miami", "Montmeló", "Monte-Carlo", "Baku", "Montreal", "Silverstone", "Spielberg", 
-                        "Le Castellet", "Budapest", "Spa", "Zandvoort", "Monza", "Sochi", "Marina Bay", "Suzuka", "Austin", "Mexico City", "São Paulo", "Abu Dhabi")
+locations_2022 <<- c("Sakhir", "Jeddah", "Melbourne", "Imola", "Miami", "Montmeló", "Monte-Carlo", "Baku", "Montreal", "Silverstone", "Spielberg", 
+                "Le Castellet", "Budapest", "Spa", "Zandvoort", "Monza", "Marina Bay", "Suzuka", "Austin", "Mexico City", "São Paulo", "Abu Dhabi", "Istanbul")
 
     circuits_2022 <<- circuits %>% 
                filter(location %in% locations_2022) %>%
@@ -149,11 +149,11 @@ initialize_courses <- function(){
 
     # ############################################
 
-    miami <<- past_2022_races %>% 
-                filter(circuitId == 79) %>%
+    turkey <<- past_2022_races %>% 
+                filter(circuitId == 5) %>%
                 arrange(desc(year))
 
-    miami_race_ID <<- miami %>%
+    turkey_race_ID <<- turkey %>%
                     pull(raceId)
 
     # ############################################
