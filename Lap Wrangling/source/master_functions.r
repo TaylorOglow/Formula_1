@@ -114,7 +114,8 @@ initialize_courses <- function(){
     # ############################################
 
     bahrain <<- past_2022_races %>% 
-                filter(circuitId == 3) %>%
+                filter(circuitId == 3) %>% 
+                filter(raceId != 1046) %>%
                 arrange(desc(year))
 
     bahrain_race_ID <<- bahrain %>%
