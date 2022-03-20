@@ -172,7 +172,7 @@ get_france_prediction <- function(){
     mutate(lap = 1:53) %>%
     summarise(race_time_milliseconds = sum(.pred)) 
 
-predict_mins <<- predict %>%
+predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
