@@ -31,7 +31,7 @@ initialize_data <- function(){
 
 initialize_circuits <- function(){
 
-locations_2022 <<- c("Sakhir", "Jeddah", "Melbourne", "Imola", "Miami", "Montmeló", "Monte-Carlo", "Baku", "Montreal", "Silverstone", "Spielberg", 
+locations_2022 <<- c("Sakhir", "Portimão", "Melbourne", "Imola", "Miami", "Montmeló", "Monte-Carlo", "Baku", "Montreal", "Silverstone", "Spielberg", 
                 "Le Castellet", "Budapest", "Spa", "Zandvoort", "Monza", "Marina Bay", "Suzuka", "Austin", "Mexico City", "São Paulo", "Abu Dhabi", "Istanbul")
 
     circuits_2022 <<- circuits %>% 
@@ -123,11 +123,11 @@ initialize_courses <- function(){
 
     # ############################################
 
-    sa <<- past_2022_races %>% 
-                filter(circuitId == 77) %>%
+    Portimão <<- past_2022_races %>% 
+                filter(circuitId == 75) %>%
                 arrange(desc(year))
 
-    saudi_race_ID <<- sa %>%
+    Portimão_race_ID <<- Portimão %>%
                     pull(raceId)
 
     # ############################################

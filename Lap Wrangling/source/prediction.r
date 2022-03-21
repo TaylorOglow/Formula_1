@@ -13,11 +13,11 @@ predict_all <<- predict_mins %>%
 predict_all
 }
 
-################################ SAUDI ARABIA
+################################ PORTIMAO
 
-get_sa_prediction <- function(){
- predict_ms <<- predict(formulaone_fit, tibble(lap = c(1:50))) %>%
-    mutate(lap = 1:50) %>%
+get_Portimão_prediction <- function(){
+ predict_ms <<- predict(formulaone_fit, tibble(lap = c(1:66))) %>%
+    mutate(lap = 1:66) %>%
     summarise(race_time_milliseconds = sum(.pred)) 
 
 predict_mins <<- predict_ms %>%
