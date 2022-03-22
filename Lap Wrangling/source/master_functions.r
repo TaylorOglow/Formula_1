@@ -311,7 +311,8 @@ initialize_courses <- function(){
 
     uae <<- past_2022_races %>% 
                 filter(circuitId == 24) %>%
-                arrange(desc(year))
+                arrange(desc(year)) %>% 
+                filter(raceId != 1073)
 
     uae_race_ID <<- uae %>%
                     pull(raceId)
