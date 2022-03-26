@@ -35,8 +35,8 @@ formulaone_plot_final
 
 
 initiate_rmse <- function(){
-  rmse <<- formulaone_test_results %>% filter(.metric == "rmse")
-  rmse
+  race_rmse <<- formulaone_test_results %>% filter(.metric == "rmse")
+  race_rmse
 }
 
 
