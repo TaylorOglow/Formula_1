@@ -30,7 +30,7 @@ formulaone_plot_final <<- ggplot(formulaone_train, aes(x = lap, y = milliseconds
   geom_point(alpha = 0.4) +
   xlab("Lap") +
   ylab("Milliseconds") +
-  geom_smooth(method = "lm", se = FALSE)
+  geom_smooth(method = "lm", se = FALSE) +
   theme(text = element_text(size = 12))
 formulaone_plot_final
 }
