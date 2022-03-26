@@ -35,8 +35,10 @@ formulaone_plot_final
 
 
 initiate_rmse <- function(){
-  race_rmse <<- formulaone_test_results %>% filter(.metric == "rmse")
+  race_rmse <<- formulaone_test_results %>% filter(.metric == "rmse") %>% mutate(Round = round_n)
   race_rmse
+    
+  test <<- rbind(test, race_rmse)
 }
 
 
