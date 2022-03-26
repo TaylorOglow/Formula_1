@@ -22,7 +22,7 @@ formulaone_test_results <<- formulaone_fit %>%
   bind_cols(formulaone_test) %>%
   metrics(truth = milliseconds, estimate = .pred)
 
-race_rmse <<-  formulaone_test_results %>%
+race_rmse <<- formulaone_test_results %>% 
                 filter(.metric == "rmse")
 race_rmse
     
