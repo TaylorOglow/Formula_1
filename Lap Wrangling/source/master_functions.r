@@ -72,11 +72,11 @@ initialize_drivers <- function(){
     # Filtering 2022 Drivers
 
 driver_surnames <<- c("Hamilton", "Russell", "Albon", "Zhou", "Bottas", "Gasly", "Tsunoda", "Alonso", "Ocon", "Vettel", "Stroll", 
-                     "Leclerc", "Sainz", "Magnussen", "Schumacher", "Ricciardo", "Norris", "Verstappen", "Pérez", "Latifi")
+                     "Leclerc", "Sainz", "Magnussen", "Schumacher", "Ricciardo", "Norris", "Verstappen", "Pérez", "Latifi", "Grosjean", "Gutiérrez", "Mazepin", "Massa", "di Resta", "Sirotkin", "Aitken", "Kvyat", "Hartley", "Räikkönen", "Giovinazzi", "Kubica")
 
 drivers_2022 <<- drivers %>%
                 filter(surname %in% driver_surnames) %>%
-                filter(!(forename %in% c("Ralf", "Michael", "Jos", "Duncan", "Jan")))
+                filter(!(forename %in% c("Ralf", "Michael", "Jos", "Duncan", "Jan", "Gene")))
 
 # Extracting Driver IDS
 
