@@ -21,10 +21,6 @@ formulaone_test_results <<- formulaone_fit %>%
   predict(formulaone_test) %>%
   bind_cols(formulaone_test) %>%
   metrics(truth = milliseconds, estimate = .pred)
-
-race_rmse <<- formulaone_test_results %>% 
-                filter(.metric == "rmse")
-race_rmse
     
 formulaone_plot_final <<- ggplot(formulaone_train, aes(x = lap, y = milliseconds)) +
   geom_point(alpha = 0.4) +
@@ -33,4 +29,12 @@ formulaone_plot_final <<- ggplot(formulaone_train, aes(x = lap, y = milliseconds
   geom_smooth(method = "lm", se = FALSE) +
   theme(text = element_text(size = 12))
 formulaone_plot_final
+}
+
+
+initiate_rmse <- function(){
+  race_rmse <<- formulaone_test_results %>%
+                filter(.metric == "rmse")
+    
+    race_rmse
 }
