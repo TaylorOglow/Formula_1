@@ -23,7 +23,7 @@ formulaone_test_results <<- formulaone_fit %>%
   metrics(truth = milliseconds, estimate = .pred) %>%
   filter(.metric == "rmse")
     
-race_rmse
+formulaone_test_results
     
 formulaone_plot_final <<- ggplot(formulaone_train, aes(x = lap, y = milliseconds)) +
   geom_point(alpha = 0.4) +
