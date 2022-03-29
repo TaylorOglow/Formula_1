@@ -38,7 +38,7 @@ initiate_rmse <- function(){
   race_rmse <<- formulaone_test_results %>% filter(.metric == "rmse") %>% mutate(Round = round_n)
   race_rmse
     
-  test <<- rbind(test, race_rmse)
+  rmse_col <<- rbind(rmse_col, race_rmse)
 }
 
 
