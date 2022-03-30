@@ -9,9 +9,16 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+    
+ predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
+
+
+
 
 ################################ PORTIMAO
 
@@ -24,8 +31,12 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+
+     predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
 
 ################################ AUSTRALIA
@@ -39,8 +50,12 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+
+     predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
 
 
@@ -56,8 +71,12 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+
+     predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
 
 ################################ MIAMI 
@@ -71,8 +90,13 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+    
+
+     predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
 
 ################################ SPAIN 
@@ -86,8 +110,12 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+    
+    predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
 
 ################################ MONACO 
@@ -101,8 +129,12 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+
+     predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
 
 ################################ AZERBAIJAN 
@@ -116,8 +148,12 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+
+     predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
 
 ################################ CANADA 
@@ -131,8 +167,12 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+     
+    predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
 
 ################################ GREAT BRITAIN 
@@ -146,8 +186,12 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+
+     predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
 
 ################################ AUSTRIA 
@@ -161,8 +205,12 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+
+     predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
 
 ################################ FRANCE 
@@ -176,8 +224,12 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+
+     predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
 
 ################################ HUNGARY 
@@ -191,8 +243,12 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+     
+    predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
 
 ################################ BELGIUM 
@@ -206,8 +262,12 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+     
+    predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
 
 ################################ NETHERLANDS 
@@ -221,8 +281,11 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+     predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
 
 ################################ MONZA 
@@ -236,8 +299,12 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+    
+     predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
 
 ################################ SINGAPORE 
@@ -251,8 +318,12 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+
+     predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
 
 ################################ JAPAN 
@@ -266,8 +337,12 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+
+     predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
 
 ################################ AUSTIN 
@@ -281,8 +356,12 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+
+     predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
 ################################ MEXICO 
 
@@ -295,8 +374,12 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+
+     predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
 
 ################################ BRAZIL 
@@ -310,8 +393,12 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+
+     predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
 ################################ ABU DHABI (LAPS)
 
@@ -324,7 +411,11 @@ predict_mins <<- predict_ms %>%
     mutate(race_time_mins = race_time_milliseconds/60000)
 
 predict_all <<- predict_mins %>%
-     mutate(race_time_hrs = race_time_milliseconds/3600000)
-predict_all
+     mutate(race_time_hrs = race_time_milliseconds/3600000)%>% 
+     mutate(Round = round_n)
+    
+    predict_all
+    
+    racetime_col <<- rbind(racetime_col, predict_all)
 }
 
