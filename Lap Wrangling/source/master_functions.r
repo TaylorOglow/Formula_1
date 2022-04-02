@@ -101,7 +101,8 @@ initialize_courses <- function(){
 
     past_2022_races <<- races %>%
                         filter(circuitId %in% circuit_ids) %>%
-                        filter(year != "2022")
+                        filter(year != "2022") %>%
+                        filter(year > 2015)
 
     # #### Extracting Race ID's
 
