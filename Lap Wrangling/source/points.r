@@ -72,5 +72,7 @@ points <<- c(driver1, driver2, driver3, driver4, driver5, driver6, driver7, driv
 points <<- data.frame(Points_UTR = points) %>% 
             mutate(Round = row_number()) %>% 
             mutate(Driver = name)
+    
+season_points <<- rbind(season_points, points)
 
 }
